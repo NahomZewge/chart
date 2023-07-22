@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatiable" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+
+    <title>title</title>
+     
+</head>
+<body>
+   <nav class="sidebar close">
+    <header>
+        <div class="image-text">
+        <span class="image">
+            <img src="logo.jpg" alt="logo">
+        </span>  
+        <div class="text header-text">
+            <span class="name">Dashbord</span>
+            <span class="profession">web tech</span>
+        </div>  
+        </div>
+        <i class='bx bx-chevron-right toggle'></i>
+    </header>
+    <div class="menu-bar">
+        <div class="menu">
+            <li class="search-box">
+                <i class='bx bx-search-alt-2 icons' ></i>
+                    <input type="text" id="search" placeholder="Search">
+                   <div class="text"> <button type="button" id="searchButton">search</button></div>
+            </input>
+            </li>
+            <ul class="menu-link">
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-home-alt icons'></i>
+                        <span class="text7 nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                   
+                        <i class='bx bx-bell icons'></i>
+                        <span class="text1 nav-text">
+                            Notification
+                        </span>
+                   
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-bar-chart-alt-2 icons'></i>
+                        <span class="text2 nav-text">
+                            Bar Chart
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-pie-chart icons'></i>
+                        <span class="text3 nav-text">
+                            Pie-chart
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-heart icons'></i>
+                        <span class="text4 nav-text">
+                            Likes
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-wallet icons'></i>
+                        <span class="text5 nav-text">
+                            Wallet
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-content">
+            <li class="">
+                <a href="#">
+                    <i class='bx bx-log-out icons'></i>
+                    <span class="text6 nav-text">
+                        Log Out
+                    </span>
+                </a>
+            </li>
+            <li class="mode">
+               <div class="moon-sun">
+                <i class='bx bx-moon icons moon'></i>
+                <i class='bx bx-sun icons sun'></i>
+               </div>
+               <span class="mode-text text">
+                Dark Mode
+               </span>
+               <div class="toggle-switch">
+                <span class="switch"><i class='bx bx-moon '></i><i class='bx bx-sun '></i></span>
+               </div>
+            </li>
+        </div>
+    </div>
+   </nav>
+   <section class="home" id="home1">
+    
+    <div class="text">Dashboard</div>
+    <button class="btn btn-outline-primary" type="button" id="Button">See Population China in a year</button>
+    <button class="btn btn-outline-primary" type="button" id="Button1">See Population Brazil in a year</button>
+    <button class="btn btn-outline-primary" type="button" id="Button2">See Population sudan in a year</button>
+    <figure class="highcharts-figure">
+        
+        <div id="container"></div>
+        
+        <p class="highcharts-description">
+            bar charts are very popular for showing a compact overview of a
+            composition or comparison. While they can be harder to read than
+            column charts, they remain a popular choice for small datasets.
+        </p>
+    </figure>
+    <figure class="highcharts-figure">
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" id="search123" placeholder="For example br,tx,eth" aria-label="Search">
+            <button class="btn btn-outline-primary" type="button" id="searchButton1">Search</button>
+          </form>
+        <div id="container1"></div>
+        <p class="highcharts-description">
+            Bar chart showing horizontal columns. This chart type is often
+            beneficial for smaller screens, as the user can scroll through the data
+            vertically, and axis labels are easy to read.
+        </p>
+    </figure>
+    <figure class="highcharts-figure">
+        <select class="form-select" aria-label="Default select example"id="showSeries">
+            <option selected>Select year</option>
+            <option value="2022" id="one">2022</option>
+            <option value="2021" id="two">2021</option>
+            <option value="2020" id="three">2020</option>
+            <option value="2019" id="four">2019</option>
+            <option value="2018" id="five">2018</option>
+            <option value="2017" id="six">2017</option>
+            <option value="2016" id="seven">2016</option>
+            <option value="2015" id="eight">2015</option>
+            <option value="2014" id="nine">2014</option>
+            <option value="2013" id="ten">2013</option>
+            <option value="2012" id="eleven">2012</option>
+            <option value="2011" id="tewlve">2011</option>
+            <option value="2010" id="threteen">2010</option>
+            <option value="2009" id="fourteen">2009</option>
+            <option value="2008" id="fifteen">2008</option>
+            <option value="2007" id="sixteen">2007</option>
+            <option value="2006" id="seventeen">2006</option>
+            <option value="2005" id="eigthteen">2005</option>
+            <option value="2004" id="nineteen">2004</option>
+            <option value="2003" id="tweny">2003</option>
+            
+    
+          </select>
+        <div id="container2"></div>
+        <p class="highcharts-description">
+            Variable radius pie charts can be used to visualize a
+            second dimension in a pie chart. In this chart.
+        </p>
+    </figure>
+    <figure class="highcharts-figure">
+        <div id="container3"></div>
+        <p class="highcharts-description">
+            This chart shows the use of a logarithmic y-axis. Logarithmic axes can
+            be useful when dealing with data with spikes or large value gaps,
+            as they allow variance in the smaller values to remain visible.
+        </p>
+    </figure>
+   </section>
+   <script src="javascript.js"></script>
+   <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script>
+ function firstchart(){
+    let country='eth'
+    async function func1(){
+        const response = await fetch(`http://api.worldbank.org/v2/country/${country}/indicator/SP.POP.TOTL?format=json`);
+            const reponseData = await response.json();
+            if(!response.ok) {
+                console.log('Error retrieving data');
+                return;
+            }
+            const population=reponseData[1]
+            const ye=population[0]
+            const yea=ye.date
+            const val=population[0].value
+   
+   
+            console.log(reponseData)
+            console.log(population)
+            
+            console.log(population[0].date)
+   
+   
+   
+        Highcharts.chart('container', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'bar'
+    },
+    title: {
+        text: '',
+        align: 'left'
+    },
+    
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: true
+        }
+    },
+    series: [{
+        
+        name: 'Population',
+        colorByPoint: true,
+        data: [{
+            name:`${population[1].date}`,
+            y: population[1].value,
+        },  {
+            name:`${population[2].date}`,
+            y: population[2].value,
+        },  {
+            name: `${population[3].date}`,
+            y: population[3].value,
+        }, {
+            name:`${population[4].date}`,
+            y: population[4].value,
+        }, {
+            name:`${population[5].date}`,
+            y: population[5].value,
+        },{
+            name:`${population[6].date}`,
+            y: population[6].value,
+        },{
+            name:`${population[7].date}`,
+            y: population[7].value,
+        },{
+            name:`${population[8].date}`,
+            y: population[8].value,
+        },{
+            name:`${population[9].date}`,
+            y: population[9].value,
+        },{
+            name:`${population[11].date}`,
+            y: population[11].value,
+        },{
+            name:`${population[12].date}`,
+            y: population[12].value,
+        },{
+            name:`${population[13].date}`,
+            y: population[13].value,
+        },{
+            name:`${population[14].date}`,
+            y: population[14].value,
+        },{
+            name:`${population[15].date}`,
+            y: population[15].value,
+        },{
+            name:`${population[16].date}`,
+            y: population[16].value,
+        }]
+    }]
+});
+    }
+    func1()
+    
+      
+        const button = document.querySelector('#Button');
+        button.onclick = async () => {
+            country='chn'
+            func1()}
+            const button1 = document.querySelector('#Button1');
+        button1.onclick = async () => {
+            country='br'
+            func1()}
+            const button2 = document.querySelector('#Button2');
+        button2.onclick = async () => {
+            country='ca'
+            func1()}
+} 
+    function secondchart()
+    {
+        const button1 = document.querySelector('#searchButton1');
+        
+        button1.onclick = async () => {
+    let country= document.querySelector('#search123').value
+
+        const response = await fetch(`http://api.worldbank.org/v2/country/${country}/indicator/SP.POP.TOTL?format=json`);
+            const reponseData = await response.json();
+            if(!response.ok) {
+                console.log('Error retrieving data');
+                return;
+            }
+            const population=reponseData[1]
+            const ye=population[0]
+            const yea=ye.date
+            const val=population[0].value
+   
+   
+            console.log(reponseData)
+            console.log(population)
+            
+            console.log(population[0].date)
+   
+   
+   
+        Highcharts.chart('container1', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: '',
+        align: 'left'
+    },
+    
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: true
+        }
+    },
+    series: [{
+        
+        name: 'Population',
+        colorByPoint: true,
+        data: [{
+            name:`${population[1].date}`,
+            y: population[1].value,
+        },  {
+            name:`${population[2].date}`,
+            y: population[2].value,
+        },  {
+            name: `${population[3].date}`,
+            y: population[3].value,
+        }, {
+            name:`${population[4].date}`,
+            y: population[4].value,
+        }, {
+            name:`${population[5].date}`,
+            y: population[5].value,
+        },{
+            name:`${population[6].date}`,
+            y: population[6].value,
+        },{
+            name:`${population[7].date}`,
+            y: population[7].value,
+        },{
+            name:`${population[8].date}`,
+            y: population[8].value,
+        },{
+            name:`${population[9].date}`,
+            y: population[9].value,
+        },{
+            name:`${population[11].date}`,
+            y: population[11].value,
+        },{
+            name:`${population[12].date}`,
+            y: population[12].value,
+        },{
+            name:`${population[13].date}`,
+            y: population[13].value,
+        },{
+            name:`${population[14].date}`,
+            y: population[14].value,
+        },{
+            name:`${population[15].date}`,
+            y: population[15].value,
+        },{
+            name:`${population[16].date}`,
+            y: population[16].value,
+        }]
+    }]
+});
+    }
+   
+    
+      
+       
+           
+} 
+
+    function thirdchart()
+    {
+
+    async function func1(){
+        const response = await fetch('http://api.worldbank.org/v2/country/eth/indicator/SP.POP.TOTL?format=json');
+            const reponseData = await response.json();
+            if(!response.ok) {
+                console.log('Error retrieving data');
+                return;
+            }
+            const population=reponseData[1]
+            const ye=population[0]
+            const yea=ye.date
+            const val=population[0].value
+   
+   
+            console.log(reponseData)
+            console.log(population)
+            
+            console.log(population[0].date)
+   
+   
+   
+        Highcharts.chart('container2', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'column'
+    },
+    title: {
+        text: '',
+        align: 'left'
+    },
+    
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: true
+        }
+    },
+    series: [{
+        
+        name: 'Population',
+        colorByPoint: true,
+        data: [{
+            name:'Ethiopia',
+            y: population[1].value
+        }]
+    }]
+});
+    }
+    func1()
+    
+      
+    const selected = document.querySelector('#one');
+   selected.addEventListener('#showSeries', async () => {
+     const mainChart = Highcharts.charts[0];
+     mainChart.series[0].data.setData([
+       {
+         name: 'Ethiopia',
+         y: population[2].value
+       }
+     ]);
+   });
+   
+   const selected1 = document.querySelector('#two');
+   selected1.addEventListener('select', async () => {
+     const mainChart = Highcharts.charts[0];
+     mainChart.series[0].data.setData([
+       {
+         name: 'Ethiopia',
+         y: population[3].value
+       }
+     ]);
+   });
+}
+function fourthchart()
+    {
+
+    async function func1(){
+        const response = await fetch(`http://api.worldbank.org/v2/country/eth/indicator/SP.POP.TOTL?format=json`);
+            const reponseData = await response.json();
+            if(!response.ok) {
+                console.log('Error retrieving data');
+                return;
+            }
+            const population=reponseData[1]
+            const ye=population[0]
+            const yea=ye.date
+            const val=population[0].value
+   
+   
+            console.log(reponseData)
+            console.log(population)
+            
+            console.log(population[0].date)
+   
+   
+   
+        Highcharts.chart('container3', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'line'
+    },
+    title: {
+        text: '',
+        align: 'left'
+    },
+    
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: true
+        }
+    },
+    series: [{
+        
+        name: 'Population',
+        colorByPoint: true,
+        data: [{
+            name:`${population[1].date}`,
+            y: population[1].value,
+        },  {
+            name:`${population[2].date}`,
+            y: population[2].value,
+        },  {
+            name: `${population[3].date}`,
+            y: population[3].value,
+        }, {
+            name:`${population[4].date}`,
+            y: population[4].value,
+        }, {
+            name:`${population[5].date}`,
+            y: population[5].value,
+        },{
+            name:`${population[6].date}`,
+            y: population[6].value,
+        },{
+            name:`${population[7].date}`,
+            y: population[7].value,
+        },{
+            name:`${population[8].date}`,
+            y: population[8].value,
+        },{
+            name:`${population[9].date}`,
+            y: population[9].value,
+        },{
+            name:`${population[11].date}`,
+            y: population[11].value,
+        },{
+            name:`${population[12].date}`,
+            y: population[12].value,
+        },{
+            name:`${population[13].date}`,
+            y: population[13].value,
+        },{
+            name:`${population[14].date}`,
+            y: population[14].value,
+        },{
+            name:`${population[15].date}`,
+            y: population[15].value,
+        },{
+            name:`${population[16].date}`,
+            y: population[16].value,
+        }]
+    }]
+});
+    }
+    func1()
+    
+      
+        const selected = document.querySelector('#one');
+        selected.selected = async () => {
+            population[1].value
+            func1()}
+       
+} 
+
+    firstchart()
+    secondchart()
+    thirdchart()
+    fourthchart()
+</script>
+</body>
+</html>
